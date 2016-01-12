@@ -8,7 +8,7 @@ public class LeftKinectHand : MonoBehaviour {
 	public GameObject leftHand;
 	public GameObject pathsColliders;
 	
-	private int frameRate = 2;
+	private int frameRate = 3;
 	
 	private static int count = 4;
 	private List<Vector3> vectors;

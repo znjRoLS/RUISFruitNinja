@@ -12,10 +12,16 @@ public class ShurikenAttach : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider col){
+		if (col.gameObject.layer == 0) {
+			rigidbody.velocity = Vector3.zero;
+			rigidbody.isKinematic = true;
+			foreach (Collider c in GetComponents<Collider>()){
+				c.enabled = false;
+			}
 
-		rigidbody.velocity = Vector3.zero;
-		rigidbody.isKinematic = true;
 
+			Destroy (gameObject, 5);
+		}
 	}
 
 }

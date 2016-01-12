@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5e70522ba4f0042b585d5c7031f963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  half: {fileID: 155796, guid: a8a8573a15a20ce42b37e66cedecb574, type: 2}
+  destroyAnimation: {fileID: 100002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
 --- !u!135 &13562924
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -117,6 +117,10 @@ Prefab:
       propertyPath: half
       value: 
       objectReference: {fileID: 155796, guid: a8a8573a15a20ce42b37e66cedecb574, type: 2}
+    - target: {fileID: 0}
+      propertyPath: destroyAnimation
+      value: 
+      objectReference: {fileID: 100002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139012}

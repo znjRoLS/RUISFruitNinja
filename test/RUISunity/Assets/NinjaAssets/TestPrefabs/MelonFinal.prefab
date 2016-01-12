@@ -579,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5e70522ba4f0042b585d5c7031f963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyAnimation: {fileID: 100002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
 --- !u!136 &13644440
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1950,6 +1951,10 @@ Prefab:
       propertyPath: ColorModule.gradient.maxGradient.atime3
       value: 63608
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: destroyAnimation
+      value: 
+      objectReference: {fileID: 100002, guid: 75369bb81385f4904842bf20a51c14a2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158814}

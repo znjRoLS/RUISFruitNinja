@@ -19,3 +19,5 @@ EditorBuildSettings:
     path: Assets/RUIS/Examples/OculusRiftExample/OculusRiftExample.unity
   - enabled: 0
     path: Assets/RUIS/Scenes/calibration.unity
+  - enabled: 1
+    path: Assets/RUIS/Examples/OculusRiftExample/gameOverScene.unity

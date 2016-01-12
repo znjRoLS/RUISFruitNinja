@@ -7,18 +7,29 @@ public class FruitCanon : MonoBehaviour {
 	//public Rigidbody prefab;
 	public GameObject[] prefabs;
 	public GameObject target;
-	public float angle = 45f;
+	public static float angle;
 	public ParticleSystem effect;
+
+	private static float minAngle = 15f;
+	private static float maxAngle = 50f;
 
 	private Vector3 target2;
 	void Start () {
-		//Invoke ("fire", Random.Range(1, 5));
+		angle = 50f;
 	}
 
 	void Update(){
 		//vector3 target2 = target.transform.TransformPoint(Vector3.zero)- new Vector3 (0, target.transform.TransformPoint(Vector3.zero).y, 0);// - new Vector3 ((float)Random.Range (-50, 50) / 30, target.transform.TransformPoint(Vector3.zero).y, 0);
 
 
+	}
+
+	public static void lowerAngle(){
+		if (angle > minAngle) {
+			angle -= 3f;
+		} else {
+			angle = minAngle;
+		}
 	}
 
 	public void fire(){
@@ -28,7 +39,7 @@ public class FruitCanon : MonoBehaviour {
 		endpos += new Vector3 (((float)Random.Range (-100, 100))/100,((float) Random.Range (-50, 0))/100,0);
 		Vector3 pos =endpos + new Vector3 (0, startpos.y - endpos.y, 0);
 		transform.LookAt (pos); //(float)Random.Range (-50, 50) / 1500
-		angle = 45;//Random.Range (30, 45);
+		//angle = 45;//Random.Range (30, 45);
 		transform.Rotate (Vector3.right, -angle);
 		float g = -Physics.gravity.y;
 

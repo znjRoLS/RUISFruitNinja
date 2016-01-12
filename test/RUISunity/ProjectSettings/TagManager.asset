@@ -7,6 +7,10 @@ TagManager:
   - WaterParticle
   - StatusText
   - PlayerCollider
+  - ShurikenTag
+  - cameraHERE
+  - Enemy
+  - UI
   layers:
   - Default
   - TransparentFX

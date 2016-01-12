@@ -20,13 +20,14 @@ public class RightKinectHand : MonoBehaviour {
 	public GameObject foreArm;
 	public GameObject upperArm;
 	public GameObject rightHandIndex1;
+	public GameObject playerNeck;
 
 	public GameObject leftShoulder;
 
 	public GameObject pathsColliders;
 	
 	private const int numOfDots = 6;
-	private int frameRate = 4;
+	private int frameRate = 3;
 	private const float distanceLimit = 0.05f;
 
 	//private const float distanceLimit1 = 0.5f;
@@ -34,7 +35,9 @@ public class RightKinectHand : MonoBehaviour {
 	private static int count = numOfDots;
 	private List<Vector3> vectors;
 	private bool thrown = false;
-	private float speed=20f;
+	private float speed=5f;
+
+	private Vector3 shDir, targetDir;
 	
 	void Start () {
 		
@@ -110,16 +113,57 @@ public class RightKinectHand : MonoBehaviour {
 					Koeficijenti.followPath(vectors.ToArray(), true, pathsColliders);
 			}
 		}
+
 	}
 	
-	public static void tangent(GameObject shuriken, Vector3 pointOne, Vector3 pointTwo, float speed, float angle){
+	public void tangent(GameObject shuriken, Vector3 pointOne, Vector3 pointTwo, float speed, float angle){
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("Enemy");
 		GameObject shur = (GameObject)Instantiate (shuriken, pointTwo, Quaternion.identity);
-		shur.GetComponent<Rigidbody>().velocity = (pointTwo - pointOne).normalized * speed;
+		//shur.GetComponent<Rigidbody>().velocity = ((pointTwo - pointOne).normalized) * speed;
+		//shur.transform.LookAt (pointOne);
+
+		//najbolje resenje do sad 
+		/*shur.GetComponent<Rigidbody>().velocity = ((enemies[0].transform.position + new Vector3(0,1,0) - pointTwo).normalized) * speed;
+		shur.transform.LookAt (enemies[0].transform);*/
+		Vector3 vec;
+		float jedanugao = Vector3.Angle (pointTwo - pointOne, enemies [0].transform.position + new Vector3 (0, 1, 0) - pointTwo);
+		float drugiugao = Vector3.Angle (pointTwo - pointOne, enemies [1].transform.position + new Vector3 (0, 1, 0) - pointTwo);
+		if (jedanugao - drugiugao < 6 && jedanugao - drugiugao > -6)
+			vec = 1.8f * (pointTwo - pointOne) / (pointTwo - pointOne).magnitude;
+		else 
+		{
+			if (jedanugao < drugiugao) {
+				vec = (pointTwo - pointOne) / (pointTwo - pointOne).magnitude + 
+					(enemies [0].transform.position + new Vector3 (0, 1, 0) - pointTwo) / (enemies [0].transform.position + new Vector3 (0, 1, 0) - pointTwo).magnitude;
+			} else {
+				vec = (pointTwo - pointOne) / (pointTwo - pointOne).magnitude + 
+					(enemies [1].transform.position + new Vector3 (0, 1, 0) - pointTwo) / (enemies [1].transform.position + new Vector3 (0, 1, 0) - pointTwo).magnitude;
+			}
+		}
+		vec.y /= 2;
+		shur.GetComponent<Rigidbody>().velocity = (vec.normalized) * speed;
 		shur.transform.LookAt (pointOne);
-		
+
+
+
+
 		shur.transform.Rotate(new Vector3(0, 0, angle));
 		shur.GetComponent<Rigidbody> ().AddTorque (shur.transform.up * 1000f);
-		
+
+		/*GameObject[] enemies = GameObject.FindGameObjectsWithTag ("Enemy");
+
+		shDir = shur.transform.forward;
+		Vector3 playerDir = enemies[0].transform.position - playerNeck.transform.position;
+		Vector3 playerDir1 = enemies[1].transform.position - playerNeck.transform.position;
+
+		float angle1 = Vector3.Angle (shDir, playerDir);
+		float angle2 = Vector3.Angle (shDir, playerDir1);
+		if (angle1 > angle2) {
+			targetDir = playerDir1;
+		} else {
+			targetDir = playerDir;
+		}
+		*/
 		Destroy (shur, 5);
 	}
 }

@@ -11,10 +11,11 @@ public class NinjaFire : MonoBehaviour {
 		rotateTowardsTarget ();
 		Invoke ("fireLogic", Random.Range(4, 10));
 	}
-	
+
 	public void fire(){
 		rotateTowardsTarget ();
 		canon.fire ();
+
 	}
 
 	private void rotateTowardsTarget(){
