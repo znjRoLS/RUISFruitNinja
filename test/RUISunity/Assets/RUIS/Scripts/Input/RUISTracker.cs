@@ -618,9 +618,9 @@ public class RUISTracker : MonoBehaviour
 	
 	void Update () 
 	{
-		transform.position = GameObject.FindGameObjectWithTag ("cameraHERE").transform.position;
-		//transform.position= GameObject.FindGameObjectWithTag("cameraHERE").transform.TransformPoint(Vector3.zero);
-		//		print (OclusCameraOrigin ());
+		GameObject.FindGameObjectWithTag("MainCamera").transform.position = transform.position = GameObject.FindGameObjectWithTag("cameraHERE").transform.position;
+		//transform.position = GameObject.FindGameObjectWithTag("cameraHERE").transform.position;
+		//		print (OculusCameraOrigin ());
 		if(!filterInFixedUpdate)
 			updateTracker(Time.deltaTime);
 	}
@@ -634,7 +634,6 @@ public class RUISTracker : MonoBehaviour
 	void LateUpdate () 
 	{
 		// Beginning of invocations that are needed by RUISCamera's oblique frustum creation
-		//transform.position = GameObject.FindGameObjectWithTag("cameraHERE").transform.position;
 		eyeCenterPosition = transform.localPosition;
 		// End of invocations that are needed by RUISCamera's oblique frustum creation
 	}
