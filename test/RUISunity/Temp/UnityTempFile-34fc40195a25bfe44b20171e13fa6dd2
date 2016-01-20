@@ -1,0 +1,399 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:Assets/OpenNI/OpenNI.Net.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data\Managed/Mono.Cecil.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
+-define:UNITY_5_2_0
+-define:UNITY_5_2
+-define:UNITY_5
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_4_6_FEATURES
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_REFLECTION_BUFFERS
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_LOG_MIXED_STACKTRACE
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+Assets/BiezerScripts/Bezier.cs
+Assets/BiezerScripts/FruitCanon.cs
+Assets/BiezerScripts/FruitTriggerDestroy.cs
+Assets/BiezerScripts/Koeficijenti.cs
+Assets/BiezerScripts/LeftKinectHand.cs
+Assets/BiezerScripts/Matrix.cs
+Assets/BiezerScripts/MatrixVector.cs
+Assets/BiezerScripts/MyoShuriken.cs
+Assets/BiezerScripts/NinjaCannonsAnimation.cs
+Assets/BiezerScripts/ParticleDestroy.cs
+Assets/BiezerScripts/PlayerHealth.cs
+Assets/BiezerScripts/Restart.cs
+Assets/BiezerScripts/RightKinectHand.cs
+Assets/BiezerScripts/ShurikenAttach.cs
+Assets/BiezerScripts/UIScore.cs
+Assets/BiezerScripts/globalpostition.cs
+Assets/BiezerScripts/test.cs
+Assets/CSML/Complex.cs
+Assets/CSML/Matrix.cs
+Assets/Health.cs
+Assets/Kinect/Scripts/BodySourceManager.cs
+Assets/Kinect/Scripts/BodySourceView.cs
+Assets/Kinect/Scripts/ColorSourceManager.cs
+Assets/Kinect/Scripts/ColorSourceView.cs
+Assets/Kinect/Scripts/DepthSourceManager.cs
+Assets/Kinect/Scripts/DepthSourceView.cs
+Assets/Kinect/Scripts/DisableOnStart.cs
+Assets/Kinect/Scripts/InfraredSourceManager.cs
+Assets/Kinect/Scripts/InfraredSourceView.cs
+Assets/Kinect/Scripts/Kinect2SourceManager.cs
+Assets/Kinect/Scripts/MultiSourceManager.cs
+Assets/Kinect/drawDebugLines.cs
+"Assets/Mixamo/Magic Pack/Demo/CameraScroll.cs"
+"Assets/Myo Samples/Scripts/ColorBoxByPose.cs"
+"Assets/Myo Samples/Scripts/JointOrientation.cs"
+"Assets/Myo Samples/Scripts/SampleSceneGUI.cs"
+Assets/Myo/Scripts/Myo.NET/EventTypes.cs
+Assets/Myo/Scripts/Myo.NET/Hub.cs
+Assets/Myo/Scripts/Myo.NET/Myo.cs
+Assets/Myo/Scripts/Myo.NET/Pose.cs
+Assets/Myo/Scripts/Myo.NET/Properties/AssemblyInfo.cs
+Assets/Myo/Scripts/Myo.NET/Quaternion.cs
+Assets/Myo/Scripts/Myo.NET/Vector3.cs
+Assets/Myo/Scripts/Myo.NET/libmyo.cs
+Assets/Myo/Scripts/ThalmicHub.cs
+Assets/Myo/Scripts/ThalmicMyo.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipItems.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/Game/EquipRandomItem.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/Game/UICursor.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIEquipmentSlot.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemSlot.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIItemStorage.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/Game/UIStorageSlot.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/System/InvAttachmentPoint.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/System/InvBaseItem.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/System/InvDatabase.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/System/InvEquipment.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/System/InvGameItem.cs
+Assets/NGUI/Examples/Scripts/InventorySystem/System/InvStat.cs
+Assets/NGUI/Examples/Scripts/Other/ChatInput.cs
+Assets/NGUI/Examples/Scripts/Other/DownloadTexture.cs
+Assets/NGUI/Examples/Scripts/Other/DragDropContainer.cs
+Assets/NGUI/Examples/Scripts/Other/DragDropItem.cs
+Assets/NGUI/Examples/Scripts/Other/DragDropRoot.cs
+Assets/NGUI/Examples/Scripts/Other/DragDropSurface.cs
+Assets/NGUI/Examples/Scripts/Other/LagPosition.cs
+Assets/NGUI/Examples/Scripts/Other/LagRotation.cs
+Assets/NGUI/Examples/Scripts/Other/LoadLevelOnClick.cs
+Assets/NGUI/Examples/Scripts/Other/LookAtTarget.cs
+Assets/NGUI/Examples/Scripts/Other/PanWithMouse.cs
+Assets/NGUI/Examples/Scripts/Other/PlayIdleAnimations.cs
+Assets/NGUI/Examples/Scripts/Other/SetColorOnSelection.cs
+Assets/NGUI/Examples/Scripts/Other/ShaderQuality.cs
+Assets/NGUI/Examples/Scripts/Other/Spin.cs
+Assets/NGUI/Examples/Scripts/Other/SpinWithMouse.cs
+Assets/NGUI/Examples/Scripts/Other/TypewriterEffect.cs
+Assets/NGUI/Examples/Scripts/Other/UpdateManager.cs
+Assets/NGUI/Examples/Scripts/Other/WindowAutoYaw.cs
+Assets/NGUI/Examples/Scripts/Other/WindowDragTilt.cs
+Assets/NGUI/Scripts/Interaction/LanguageSelection.cs
+Assets/NGUI/Scripts/Interaction/UIButton.cs
+Assets/NGUI/Scripts/Interaction/UIButtonActivate.cs
+Assets/NGUI/Scripts/Interaction/UIButtonColor.cs
+Assets/NGUI/Scripts/Interaction/UIButtonKeyBinding.cs
+Assets/NGUI/Scripts/Interaction/UIButtonKeys.cs
+Assets/NGUI/Scripts/Interaction/UIButtonMessage.cs
+Assets/NGUI/Scripts/Interaction/UIButtonOffset.cs
+Assets/NGUI/Scripts/Interaction/UIButtonPlayAnimation.cs
+Assets/NGUI/Scripts/Interaction/UIButtonRotation.cs
+Assets/NGUI/Scripts/Interaction/UIButtonScale.cs
+Assets/NGUI/Scripts/Interaction/UIButtonSound.cs
+Assets/NGUI/Scripts/Interaction/UIButtonTween.cs
+Assets/NGUI/Scripts/Interaction/UICenterOnChild.cs
+Assets/NGUI/Scripts/Interaction/UICheckbox.cs
+Assets/NGUI/Scripts/Interaction/UICheckboxControlledComponent.cs
+Assets/NGUI/Scripts/Interaction/UICheckboxControlledObject.cs
+Assets/NGUI/Scripts/Interaction/UIDragCamera.cs
+Assets/NGUI/Scripts/Interaction/UIDragObject.cs
+Assets/NGUI/Scripts/Interaction/UIDragPanelContents.cs
+Assets/NGUI/Scripts/Interaction/UIDraggableCamera.cs
+Assets/NGUI/Scripts/Interaction/UIDraggablePanel.cs
+Assets/NGUI/Scripts/Interaction/UIForwardEvents.cs
+Assets/NGUI/Scripts/Interaction/UIGrid.cs
+Assets/NGUI/Scripts/Interaction/UIImageButton.cs
+Assets/NGUI/Scripts/Interaction/UIInputValidator.cs
+Assets/NGUI/Scripts/Interaction/UIPopupList.cs
+Assets/NGUI/Scripts/Interaction/UISavedOption.cs
+Assets/NGUI/Scripts/Interaction/UIScrollBar.cs
+Assets/NGUI/Scripts/Interaction/UISlider.cs
+Assets/NGUI/Scripts/Interaction/UISliderColors.cs
+Assets/NGUI/Scripts/Interaction/UISoundVolume.cs
+Assets/NGUI/Scripts/Interaction/UITable.cs
+Assets/NGUI/Scripts/Internal/ActiveAnimation.cs
+Assets/NGUI/Scripts/Internal/AnimationOrTween.cs
+Assets/NGUI/Scripts/Internal/BMFont.cs
+Assets/NGUI/Scripts/Internal/BMGlyph.cs
+Assets/NGUI/Scripts/Internal/BMSymbol.cs
+Assets/NGUI/Scripts/Internal/BetterList.cs
+Assets/NGUI/Scripts/Internal/ByteReader.cs
+Assets/NGUI/Scripts/Internal/IgnoreTimeScale.cs
+Assets/NGUI/Scripts/Internal/Localization.cs
+Assets/NGUI/Scripts/Internal/NGUIDebug.cs
+Assets/NGUI/Scripts/Internal/NGUIMath.cs
+Assets/NGUI/Scripts/Internal/NGUITools.cs
+Assets/NGUI/Scripts/Internal/SpringPanel.cs
+Assets/NGUI/Scripts/Internal/UIDrawCall.cs
+Assets/NGUI/Scripts/Internal/UIEventListener.cs
+Assets/NGUI/Scripts/Internal/UIGeometry.cs
+Assets/NGUI/Scripts/Internal/UINode.cs
+Assets/NGUI/Scripts/Internal/UIWidget.cs
+Assets/NGUI/Scripts/Tweening/AnimatedAlpha.cs
+Assets/NGUI/Scripts/Tweening/AnimatedColor.cs
+Assets/NGUI/Scripts/Tweening/SpringPosition.cs
+Assets/NGUI/Scripts/Tweening/TweenAlpha.cs
+Assets/NGUI/Scripts/Tweening/TweenColor.cs
+Assets/NGUI/Scripts/Tweening/TweenFOV.cs
+Assets/NGUI/Scripts/Tweening/TweenOrthoSize.cs
+Assets/NGUI/Scripts/Tweening/TweenPosition.cs
+Assets/NGUI/Scripts/Tweening/TweenRotation.cs
+Assets/NGUI/Scripts/Tweening/TweenScale.cs
+Assets/NGUI/Scripts/Tweening/TweenTransform.cs
+Assets/NGUI/Scripts/Tweening/TweenVolume.cs
+Assets/NGUI/Scripts/Tweening/UITweener.cs
+Assets/NGUI/Scripts/UI/UIAnchor.cs
+Assets/NGUI/Scripts/UI/UIAtlas.cs
+Assets/NGUI/Scripts/UI/UICamera.cs
+Assets/NGUI/Scripts/UI/UIFilledSprite.cs
+Assets/NGUI/Scripts/UI/UIFont.cs
+Assets/NGUI/Scripts/UI/UIInput.cs
+Assets/NGUI/Scripts/UI/UIInputSaved.cs
+Assets/NGUI/Scripts/UI/UILabel.cs
+Assets/NGUI/Scripts/UI/UILocalize.cs
+Assets/NGUI/Scripts/UI/UIOrthoCamera.cs
+Assets/NGUI/Scripts/UI/UIPanel.cs
+Assets/NGUI/Scripts/UI/UIRoot.cs
+Assets/NGUI/Scripts/UI/UISlicedSprite.cs
+Assets/NGUI/Scripts/UI/UISprite.cs
+Assets/NGUI/Scripts/UI/UISpriteAnimation.cs
+Assets/NGUI/Scripts/UI/UIStretch.cs
+Assets/NGUI/Scripts/UI/UITextList.cs
+Assets/NGUI/Scripts/UI/UITexture.cs
+Assets/NGUI/Scripts/UI/UITiledSprite.cs
+Assets/NGUI/Scripts/UI/UITooltip.cs
+Assets/NGUI/Scripts/UI/UIViewport.cs
+Assets/NinjaAssets/Script/FruitFire.cs
+Assets/NinjaAssets/Script/gadjanje.cs
+Assets/NinjaFire.cs
+Assets/OVR/Scripts/OVRCameraRig.cs
+Assets/OVR/Scripts/OVRCommon.cs
+Assets/OVR/Scripts/OVRDisplay.cs
+Assets/OVR/Scripts/OVRManager.cs
+Assets/OVR/Scripts/OVRPluginEvent.cs
+Assets/OVR/Scripts/OVRTracker.cs
+Assets/OVR/Scripts/OvrCapi.cs
+Assets/OVR/Scripts/Util/OVRCrosshair.cs
+Assets/OVR/Scripts/Util/OVRGUI.cs
+Assets/OVR/Scripts/Util/OVRGamepadController.cs
+Assets/OVR/Scripts/Util/OVRGridCube.cs
+Assets/OVR/Scripts/Util/OVRMainMenu.cs
+Assets/OVR/Scripts/Util/OVRPlayerController.cs
+Assets/OVR/Scripts/Util/OVRScreenFade.cs
+Assets/OVR/Scripts/Util/OVRUGUI.cs
+Assets/OVR/Scripts/Util/OVRVisionGuide.cs
+Assets/OpenNI/Scripts/Input/NIAxis.cs
+Assets/OpenNI/Scripts/Input/NIInput.cs
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/NIEventLogger.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNI engine/NICheckVersion.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNI engine/NIContext.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNI engine/NIConvertCoordinates.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNI engine/NIImage.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNI engine/NIOpenNICheckVersion.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNI engine/NIUserAndSkeleton.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNI engine/WrapperBaseObjects/NIWrapperContextDependant.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNI engine/WrapperBaseObjects/NIWrapperObject.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/OpenNISettingsManager.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/Queries/NIQuery.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/Basic objects/Queries/NIQueryDescription.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/User selector/Base objects/NIPlayerCandidateObject.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/User selector/Base objects/NIPlayerManager.cs"
+"Assets/OpenNI/Scripts/Main OpenNI/User selector/Base objects/NISelectedPlayer.cs"
+Assets/OpenNI/Scripts/Selectors/NIPlayerCOMCandidateObject.cs
+Assets/OpenNI/Scripts/Selectors/NIPlayerManagerCOMSelection.cs
+Assets/OpenNI/Scripts/Selectors/NIPlayerManagerPoseSelection.cs
+Assets/OpenNI/Scripts/Selectors/NIPlayerPoseCandidateObject.cs
+"Assets/OpenNI/Scripts/Skeleton base objects/NISkeletonController.cs"
+"Assets/OpenNI/Scripts/Trackers/Base tracker and manager classes/NIPointTracker.cs"
+"Assets/OpenNI/Scripts/Trackers/Base tracker and manager classes/NIPointTrackerManager.cs"
+"Assets/OpenNI/Scripts/Trackers/Common gesture classes/NIGestureFactory.cs"
+"Assets/OpenNI/Scripts/Trackers/Common gesture classes/NIGestureManager.cs"
+"Assets/OpenNI/Scripts/Trackers/Common gesture classes/NIGestureTracker.cs"
+Assets/OpenNI/Scripts/Trackers/NIPositionTrackerFrameManager.cs
+"Assets/OpenNI/Scripts/Trackers/Skeleton based trackers/gestures/Gesture detectors/NISteadySkeletonHandDetector.cs"
+"Assets/OpenNI/Scripts/Trackers/Skeleton based trackers/gestures/Gesture detectors/NIUserPoseDetector.cs"
+"Assets/OpenNI/Scripts/Trackers/Skeleton based trackers/gestures/factories/NISteadySkeletonGestureFactory.cs"
+"Assets/OpenNI/Scripts/Trackers/Skeleton based trackers/gestures/factories/NIUserPoseGestureFactory.cs"
+"Assets/OpenNI/Scripts/Trackers/Skeleton based trackers/point trackers/NISkeletonTracker.cs"
+"Assets/OpenNI/Scripts/Utilities/Debug utilities/NISkeletonControllerLineDebugger.cs"
+"Assets/OpenNI/Scripts/Utilities/Debug utilities/NISkeletonControllerLineRenderer.cs"
+"Assets/OpenNI/Scripts/Utilities/Debug utilities/Viewers/NIDepthmapViewerUtility.cs"
+"Assets/OpenNI/Scripts/Utilities/Debug utilities/Viewers/NIImagemapViewerUtility.cs"
+"Assets/OpenNI/Scripts/Utilities/Debug utilities/Viewers/NIMapViewerBaseUtility.cs"
+"Assets/OpenNI/Scripts/Utilities/Debug utilities/Viewers/NIRadarViewerUtility.cs"
+"Assets/OpenNI/Scripts/Utilities/Debug utilities/Viewers/NIUsermapViewerUtility.cs"
+"Assets/OpenNI/Scripts/Utilities/General utilities/NISkeletonCalibrationMessageUtility.cs"
+"Assets/OpenNI/Scripts/Utilities/General utilities/NITimedPointListUtility.cs"
+"Assets/OpenNI/Scripts/Utilities/General utilities/NITimedPointSpeedListUtility.cs"
+Assets/OpenNI/Scripts/Utilities/NIGUI/DefaultNIGUICursor.cs
+Assets/OpenNI/Scripts/Utilities/NIGUI/NICursorInitializer.cs
+Assets/OpenNI/Scripts/Utilities/NIGUI/NIGUI.cs
+Assets/OpenNI/Scripts/Utilities/NIGUI/NIGUICursor.cs
+Assets/RUIS/Examples/BowlingAlley/Scripts/ResetBall.cs
+Assets/RUIS/Examples/BowlingAlley/Scripts/SpawnBowlingPins.cs
+Assets/RUIS/Examples/CaveExample/Scripts/ShiftViewpointWithKeyboard.cs
+"Assets/RUIS/Examples/Shared Files/RobotCrane.cs"
+Assets/RUIS/Scripts/CharacterController/RUISCharacterAnimationController.cs
+Assets/RUIS/Scripts/CharacterController/RUISCharacterController.cs
+Assets/RUIS/Scripts/CharacterController/RUISCharacterLocomotion.cs
+Assets/RUIS/Scripts/CharacterController/RUISCharacterStabilizingCollider.cs
+Assets/RUIS/Scripts/CharacterController/RUISHeadTrackerAssigner.cs
+Assets/RUIS/Scripts/CharacterController/RUISKinectAndMecanimCombiner.cs
+Assets/RUIS/Scripts/Display/RUISCamera.cs
+Assets/RUIS/Scripts/Display/RUISDisplay.cs
+Assets/RUIS/Scripts/Display/RUISDisplayManager.cs
+Assets/RUIS/Scripts/Display/RUISKeystoning.cs
+Assets/RUIS/Scripts/Display/RUISKeystoningBorderDrawer.cs
+Assets/RUIS/Scripts/Display/RUISKeystoningConfiguration.cs
+Assets/RUIS/Scripts/GUI/RUIS3dGuiCursor.cs
+Assets/RUIS/Scripts/GUI/RUISGUI.cs
+Assets/RUIS/Scripts/GUI/RUISMenuNGUI.cs
+Assets/RUIS/Scripts/Input/Calibration/CalibrationProcess/RUISKinect2FloorDataCalibrationProcess.cs
+Assets/RUIS/Scripts/Input/Calibration/CalibrationProcess/RUISKinect2ToKinectCalibrationProcess.cs
+Assets/RUIS/Scripts/Input/Calibration/CalibrationProcess/RUISKinect2ToOculusDK2CalibrationProcess.cs
+Assets/RUIS/Scripts/Input/Calibration/CalibrationProcess/RUISKinect2ToPSMoveCalibrationProcess.cs
+Assets/RUIS/Scripts/Input/Calibration/CalibrationProcess/RUISKinectFloorDataCalibrationProcess.cs
+Assets/RUIS/Scripts/Input/Calibration/CalibrationProcess/RUISKinectToOculusDK2CalibrationProcess.cs
+Assets/RUIS/Scripts/Input/Calibration/CalibrationProcess/RUISKinectToPSMoveCalibrationProcess.cs
+Assets/RUIS/Scripts/Input/Calibration/CalibrationProcess/RUISPSMoveToOculusDK2CalibrationProcess.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISCalibrationDepthMap.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISCalibrationMoveImage.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISCameraTiltTextUpdater.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISCoordinateCalibration.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISCoordinateSystem.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISKinect2DepthView.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISMoveCalibrationVisualizer.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISOculusFollow.cs
+Assets/RUIS/Scripts/Input/Calibration/RUISSampleDifferenceVisualizer.cs
+Assets/RUIS/Scripts/Input/Gestures/RUISFistGestureRecognizer.cs
+Assets/RUIS/Scripts/Input/Gestures/RUISGestureRecognizer.cs
+Assets/RUIS/Scripts/Input/Gestures/RUISHoldGestureRecognizer.cs
+Assets/RUIS/Scripts/Input/Gestures/RUISJumpGestureRecognizer.cs
+Assets/RUIS/Scripts/Input/Gestures/RUISKinectJointFollower.cs
+Assets/RUIS/Scripts/Input/Gestures/RUISMotionGesture.cs
+Assets/RUIS/Scripts/Input/Gestures/RUISPointTracker.cs
+Assets/RUIS/Scripts/Input/RUISInputManager.cs
+Assets/RUIS/Scripts/Input/RUISKinect2Data.cs
+Assets/RUIS/Scripts/Input/RUISKinectDisabler.cs
+Assets/RUIS/Scripts/Input/RUISMouseWand.cs
+Assets/RUIS/Scripts/Input/RUISOVRManager.cs
+Assets/RUIS/Scripts/Input/RUISPSMoveWand.cs
+Assets/RUIS/Scripts/Input/RUISRazerWand.cs
+Assets/RUIS/Scripts/Input/RUISSelectable.cs
+Assets/RUIS/Scripts/Input/RUISSelectableBallJoint.cs
+Assets/RUIS/Scripts/Input/RUISSelectableHingeJoint.cs
+Assets/RUIS/Scripts/Input/RUISSkeletonController.cs
+Assets/RUIS/Scripts/Input/RUISSkeletonManager.cs
+Assets/RUIS/Scripts/Input/RUISSkeletonWand.cs
+Assets/RUIS/Scripts/Input/RUISTracker.cs
+Assets/RUIS/Scripts/Input/RUISWand.cs
+Assets/RUIS/Scripts/Input/RUISWandSelector.cs
+Assets/RUIS/Scripts/Interaction/BallSpawner.cs
+Assets/RUIS/Scripts/Interaction/MoveGun.cs
+Assets/RUIS/Scripts/Interaction/PlayAudioOnCollision.cs
+Assets/RUIS/Scripts/Interaction/PlayAudioWhenSelected.cs
+Assets/RUIS/Scripts/Interaction/ReelInSelection.cs
+Assets/RUIS/Scripts/Interaction/RespawnObject.cs
+Assets/RUIS/Scripts/Util/CachedValue.cs
+Assets/RUIS/Scripts/Util/ConfigurableJointExtension.cs
+Assets/RUIS/Scripts/Util/DrawLine.cs
+Assets/RUIS/Scripts/Util/FixedFollowTransform.cs
+Assets/RUIS/Scripts/Util/KalmanFilter.cs
+Assets/RUIS/Scripts/Util/KalmanFilteredRotation.cs
+Assets/RUIS/Scripts/Util/KalmanFilteredTransform.cs
+Assets/RUIS/Scripts/Util/MathUtil.cs
+Assets/RUIS/Scripts/Util/RUISUserViewer.cs
+Assets/RUIS/Scripts/Util/RotationTestingScript.cs
+Assets/RUIS/Scripts/Util/XMLUtil.cs
+Assets/RUIS/Scripts/Util/XmlImportExport.cs
+Assets/SimpleParticlePack/Scripts/ParticleTester.cs
+Assets/SixenseInput/DemoScenes/Scripts/SixenseHandController.cs
+Assets/SixenseInput/DemoScenes/Scripts/SixenseInputTest.cs
+Assets/SixenseInput/DemoScenes/Scripts/SixenseObjectController.cs
+Assets/SixenseInput/Scripts/SixenseInput.cs
+Assets/SixenseInput/Scripts/SixensePlugin.cs
+Assets/UIScripts/LookCameraPosition.cs
+Assets/UIScripts/UILockToOculusCamera.cs
+Assets/camCon.cs
+Assets/opet.cs
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Xml.Linq.dll"

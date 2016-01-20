@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class FruitTriggerDestroy : MonoBehaviour {
@@ -7,17 +8,22 @@ public class FruitTriggerDestroy : MonoBehaviour {
 	private bool fruitCollided = false;
 	public static int SCORE = 0;
 	public static int MISSES = 0;
-	public static int missesLimit = 20;
+	public static bool isGameOver = false;
+	public static int missesLimit = 5;
 
 	public GameObject destroyAnimation;
+	private PlayerHealth h;
+	public GameObject ui;
 
 	void Start(){
 		Collider[] cols = GetComponents<Collider> ();
 		foreach (Collider c in cols) {
 			c.isTrigger = false;
 		}
-
+		ui = GameObject.Find ("UI");
 		Transform firstHalf = transform.parent.GetChild (1);
+		h = GameObject.Find ("Scripts").GetComponent<PlayerHealth> ();
+		Debug.Log (h);
 	}
 	
 	void OnCollisionEnter(Collision other){
@@ -29,6 +35,7 @@ public class FruitTriggerDestroy : MonoBehaviour {
 			collided = true;
 
 			SCORE += 100;
+			h.getScore(SCORE);
 			FruitCanon.lowerAngle();
 			Debug.Log("Score" + SCORE);
 
@@ -81,6 +88,7 @@ public class FruitTriggerDestroy : MonoBehaviour {
 			if (fruitCollided == false){
 				Debug.Log("Misses " + MISSES);
 				MISSES++;
+				h.setMisses(FruitTriggerDestroy.missesLimit - FruitTriggerDestroy.MISSES);
 				if (MISSES >= missesLimit){
 					gameOver();
 				}
@@ -89,7 +97,21 @@ public class FruitTriggerDestroy : MonoBehaviour {
 	}
 
 	public void gameOver(){
-		Application.LoadLevel ("gameOverScene");
+		isGameOver = true;
+
+		for (int i = 0; i < 3; i++) {
+			ui.transform.GetChild(i).gameObject.SetActive(false);
+		}
+		for (int i = 3; i < 6; i++) {
+			ui.transform.GetChild(i).gameObject.SetActive(true);
+		}
+
+		ui.transform.GetChild (5).GetComponent<Text> ().text = "Score : " + SCORE;
+
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("Enemy");
+		foreach (GameObject e in enemies) {
+			Destroy(e);
+		}
 	}
 
 

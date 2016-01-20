@@ -19,7 +19,22 @@ public class ShurikenAttach : MonoBehaviour {
 				c.enabled = false;
 			}
 
+			this.gameObject.transform.parent = col.gameObject.transform;
 
+			Destroy (gameObject, 5);
+		}
+	}
+
+	void OnCollisionEnter(Collision col){
+		if (col.gameObject.layer == 0) {
+			rigidbody.velocity = Vector3.zero;
+			rigidbody.isKinematic = true;
+			foreach (Collider c in GetComponents<Collider>()){
+				c.enabled = false;
+			}
+			
+			this.gameObject.transform.parent = col.gameObject.transform;
+			
 			Destroy (gameObject, 5);
 		}
 	}

@@ -1,0 +1,238 @@
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\OpenNI.Net.dll (this message is harmless)
+Loading C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\OpenNI.Net.dll into Unity Child Domain
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.047 seconds
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Nordeus\Desktop\FINAL\FruitNinja\test\RUISunity\FruitNinja_Data\Managed\System.Xml.dll (this message is harmless)
+XML validation finished for inputConfig.xml!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Kinect is disabled from RUISInputManager.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+PS Move is disabled from RUISInputManager.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Razer Hydra is disabled from RUISInputManager. Disabling object SixenseInput that has the SixenseInput script.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Could not find a suitable head tracker with regard to enabled devices in RUISInputManager!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+XML validation finished for calibration.xml!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Disabling RUISCamera 'RUISCamera' because it isn't linked into a RUISDisplay.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+XML validation finished for defaultDisplay.xml!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RUISCoordinateSystem has the option 'Use Master Coordinate System' enabled, therefore OVRDisplay.RecenterPose() has no effect!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RUISTracker: Position Tracker is None and OVRCameraRig found in a child gameObject, turning off Oculus Rift position tracking altogether. If you do not want this, then remove the OVRCameraRig component from the child object(s).
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Oculus Rift enabled in RUISCamera, forcing stereo to display: MainDisplay
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 119c -> priority: 1 
+  Thread -> id: 1090 -> priority: 1 
+RUISCoordinateSystem has the option 'Use Master Coordinate System' enabled, therefore OVRDisplay.RecenterPose() has no effect!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Updated Kinect 2 floor normal (0.1, 1.0, 0.2) and floor distance (0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Misses 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Misses 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Score100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Score200
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Misses 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Score300
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Misses 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Misses 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Disconnect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+UnloadTime: 5.715606 ms
+XML validation finished for inputConfig.xml!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Kinect is disabled from RUISInputManager.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+PS Move is disabled from RUISInputManager.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Razer Hydra is disabled from RUISInputManager. Disabling object SixenseInput that has the SixenseInput script.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Could not find a suitable head tracker with regard to enabled devices in RUISInputManager!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+XML validation finished for calibration.xml!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 1640 unused Assets to reduce memory usage. Loaded Objects now: 4586.
+Total: 4.726226 ms (FindLiveObjects: 0.306313 ms CreateObjectMapping: 0.156371 ms MarkObjects: 3.568491 ms  DeleteObjects: 0.693589 ms)
+
+Disabling RUISCamera 'RUISCamera' because it isn't linked into a RUISDisplay.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+XML validation finished for defaultDisplay.xml!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RUISCoordinateSystem has the option 'Use Master Coordinate System' enabled, therefore OVRDisplay.RecenterPose() has no effect!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RUISCoordinateSystem has the option 'Use Master Coordinate System' enabled, therefore OVRDisplay.RecenterPose() has no effect!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RUISTracker: Position Tracker is None and OVRCameraRig found in a child gameObject, turning off Oculus Rift position tracking altogether. If you do not want this, then remove the OVRCameraRig component from the child object(s).
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Oculus Rift enabled in RUISCamera, forcing stereo to display: MainDisplay
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RUISCoordinateSystem has the option 'Use Master Coordinate System' enabled, therefore OVRDisplay.RecenterPose() has no effect!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RUISCoordinateSystem has the option 'Use Master Coordinate System' enabled, therefore OVRDisplay.RecenterPose() has no effect!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Updated Kinect 2 floor normal (0.1, 1.0, 0.2) and floor distance (0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scripts (PlayerHealth)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Misses 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Disconnect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Disconnect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+

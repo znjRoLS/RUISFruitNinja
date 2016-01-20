@@ -3,15 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using VesnaSanja;
 
-using LockingPolicy = Thalmic.Myo.LockingPolicy;
-using Pose = Thalmic.Myo.Pose;
-using UnlockType = Thalmic.Myo.UnlockType;
-using VibrationType = Thalmic.Myo.VibrationType;
-
 public class RightKinectHand : MonoBehaviour {
-	
-	public GameObject myo = null;
-	private ThalmicMyo tMyo;
 	
 	//private static Pose lastPose = Pose.Unknown;
 
@@ -35,7 +27,7 @@ public class RightKinectHand : MonoBehaviour {
 	private static int count = numOfDots;
 	private List<Vector3> vectors;
 	private bool thrown = false;
-	private float speed=5f;
+	private float speed=10f;
 
 	private Vector3 shDir, targetDir;
 	
@@ -46,8 +38,7 @@ public class RightKinectHand : MonoBehaviour {
 		lineRenderer.SetColors(Color.gray, Color.gray);
 		lineRenderer.SetWidth(0.2F, 0.2F);
 		lineRenderer.SetVertexCount(40);*/
-		
-		tMyo = myo.GetComponent<ThalmicMyo> ();
+
 		vectors = new List<Vector3> ();
 	}
 	
@@ -69,7 +60,7 @@ public class RightKinectHand : MonoBehaviour {
 		if (dis1 < 2*distanceLimit) 
 		{
 			thrown = true;
-			Debug.Log(thrown);
+//			Debug.Log(thrown);
 		}
 
 
@@ -79,7 +70,7 @@ public class RightKinectHand : MonoBehaviour {
 				float dis=Vector3.Distance(hand.transform.TransformPoint(Vector3.zero), foreArm.transform.TransformPoint(Vector3.zero));
 				dis+=Vector3.Distance(upperArm.transform.TransformPoint(Vector3.zero), foreArm.transform.TransformPoint(Vector3.zero));
 				dis-=Vector3.Distance(hand.transform.TransformPoint(Vector3.zero), upperArm.transform.TransformPoint(Vector3.zero));
-				Debug.Log (dis);
+				//Debug.Log (dis);
 				if(dis<distanceLimit) 
 				{
 					thrown=false;
@@ -115,7 +106,7 @@ public class RightKinectHand : MonoBehaviour {
 		}
 
 	}
-	
+	//pointOne rame il lakat, pointTwo saka
 	public void tangent(GameObject shuriken, Vector3 pointOne, Vector3 pointTwo, float speed, float angle){
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag ("Enemy");
 		GameObject shur = (GameObject)Instantiate (shuriken, pointTwo, Quaternion.identity);
@@ -128,19 +119,52 @@ public class RightKinectHand : MonoBehaviour {
 		Vector3 vec;
 		float jedanugao = Vector3.Angle (pointTwo - pointOne, enemies [0].transform.position + new Vector3 (0, 1, 0) - pointTwo);
 		float drugiugao = Vector3.Angle (pointTwo - pointOne, enemies [1].transform.position + new Vector3 (0, 1, 0) - pointTwo);
-		if (jedanugao - drugiugao < 6 && jedanugao - drugiugao > -6)
-			vec = 1.8f * (pointTwo - pointOne) / (pointTwo - pointOne).magnitude;
+
+		Debug.Log (jedanugao + "   drugi:" + drugiugao);
+		if (jedanugao - drugiugao < 2 && jedanugao - drugiugao > -2)
+			vec =  (pointTwo - pointOne) / (pointTwo - pointOne).magnitude;
 		else 
 		{
 			if (jedanugao < drugiugao) {
+				Debug.Log("PRVI");
 				vec = (pointTwo - pointOne) / (pointTwo - pointOne).magnitude + 
-					(enemies [0].transform.position + new Vector3 (0, 1, 0) - pointTwo) / (enemies [0].transform.position + new Vector3 (0, 1, 0) - pointTwo).magnitude;
+					2*(enemies [0].transform.position + new Vector3 (0, 1, 0) - pointTwo) / (enemies [0].transform.position + new Vector3 (0, 1, 0) - pointTwo).magnitude;
+			
 			} else {
+				Debug.Log("Drugi");
 				vec = (pointTwo - pointOne) / (pointTwo - pointOne).magnitude + 
-					(enemies [1].transform.position + new Vector3 (0, 1, 0) - pointTwo) / (enemies [1].transform.position + new Vector3 (0, 1, 0) - pointTwo).magnitude;
+					2*(enemies [1].transform.position + new Vector3 (0, 1, 0) - pointTwo) / (enemies [1].transform.position + new Vector3 (0, 1, 0) - pointTwo).magnitude;
 			}
+			vec=vec/vec.magnitude;
 		}
 		vec.y /= 2;
+		Ray ray = new Ray ();
+		RaycastHit rHit;
+		
+		ray.origin = pointTwo;
+		ray.direction = vec;
+		
+		bool hit = Physics.Raycast (ray, out rHit);
+
+		if (hit) {
+			GameObject hitObj = rHit.transform.gameObject;
+			if (jedanugao - drugiugao >= 2 || jedanugao - drugiugao <= -2)
+			{
+			if (hitObj.tag.Equals("Enemy")){
+
+				if (jedanugao < drugiugao){
+						Debug.Log("PRVI aaaaAA");
+					Vector3 vec1 =(vec+4*((enemies[0].transform.position + new Vector3(0,1,0) - pointTwo)/(enemies[0].transform.position + new Vector3(0,1,0) - pointTwo).magnitude));
+					vec=new Vector3(vec1.x, vec.y, vec1.z);
+				}else{
+						Debug.Log("drugi aaaaAA");
+					Vector3 vec1 =(vec+4*((enemies[1].transform.position + new Vector3(0,1,0) - pointTwo)/(enemies[1].transform.position + new Vector3(0,1,0) - pointTwo).magnitude));
+					vec=new Vector3(vec1.x, vec.y, vec1.z);
+				}
+			}
+			}
+		}
+
 		shur.GetComponent<Rigidbody>().velocity = (vec.normalized) * speed;
 		shur.transform.LookAt (pointOne);
 

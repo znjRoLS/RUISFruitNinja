@@ -17,8 +17,8 @@ public class UILockToOculusCamera : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		Debug.Log ("ui postition " + ui.transform.position + " " + gameObject.transform.parent.parent.gameObject.name);
-		Debug.Log ("camera trans " + this.gameObject.transform.position);
+//		Debug.Log ("ui postition " + ui.transform.position + " " + gameObject.transform.parent.parent.gameObject.name);
+//		Debug.Log ("camera trans " + this.gameObject.transform.position);
 
 		Transform cameraTrans = this.gameObject.transform;
 

@@ -2069,6 +2069,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelPrefab: {fileID: 154192}
   a: {fileID: 9573770}
+  blood: {fileID: 147454, guid: bd0e68fcbb8af0a4d995999af083e936, type: 2}
+  bloodPool: {fileID: 169856, guid: 9e70aefe03b6ae24cba646af8eaa3049, type: 2}
+  limitObject: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!114 &11427336
 MonoBehaviour:
   m_ObjectHideFlags: 1
